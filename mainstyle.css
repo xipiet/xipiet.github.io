@@ -5,33 +5,24 @@ html {
     padding: 0;
     scroll-behavior: smooth;
 }
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px 10%;
 }
-
 .logo {
     height: 60px;
     /* Passen Sie die Höhe nach Bedarf an */
 }
-
-.languagelogo {
-    height: 12px;
-}
-
 .nav-links {
     display: flex;
     gap: 40px;
 }
-
 .nav-links a {
     text-decoration: none;
     color: black;
 }
-
 .main-section {
     display: flex;
     justify-content: space-between;
@@ -39,65 +30,52 @@ html {
     /* ensures the alignment starts at the top */
     padding: 60px 10%;
     padding-bottom: 100px;
-
 }
-
 .main-text {
     flex: 1;
     margin-right: 20px;
     font-size: 250%;
 }
-
 .sidebar {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .place-holder {
     max-width: 60%;
     height: auto;
 }
-
-
 .work-box {
     display: flex;
     align-items: center;
     transition: all .35s;
     padding: 50px;
 }
-
 .work-text p {
     width: 80%;
     padding-bottom: 20px;
     color: #000;
     font-weight: 400;
 }
-
 .work-box h3 {
     color: #000;
 }
-
 .work-box h4 {
     color: #00e;
 }
-
 .work-text {
     padding-left: 120px;
 }
-
 .work-photo img {
     width: 200px;
     border-radius: 30px;
     padding-left: 120px;
 }
-
 .work-box:hover {
     transform: scale(1.02);
     transition: all .5s;
 }
-
 .work-text a {
     text-decoration: none;
 }

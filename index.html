@@ -8,28 +8,51 @@
     <link rel="stylesheet" type="text/css" href="mainstyle.css">
 </head>
 
-<body>
+<body onload="switchLanguage()">
     <div class="navbar">
         <a href="index.html"><img src="/img/logo.png" class="logo"></a>
-        <div class="nav-links">
-            <a href="index_en.html"><img src="/img/ger_en.png" class="languagelogo"></a>
+
+        <!-- Deutsch -->
+        <div class="nav-links" data-lang="de" style="display: none;" data-display="flex">
+            <div>
+                <button onclick="switchLanguage()">Switch Language</button>
+            </div>
             <a href="work.html">werdegang</a>
             <a href="about.html">persönliches</a>
             <a href="https://drive.google.com/file/d/1Klc5VERq2VqXA96aXJmrSmJmas15QENY/view?usp=sharing"
                 target="_blank">CV</a>
         </div>
 
+        <!-- Englisch -->
+        <div class="nav-links" data-lang="en" data-display="flex">
+            <div>
+                <button onclick="switchLanguage()">Switch Language</button>
+            </div>
+            <a href="work.html">work</a>
+            <a href="about.html">about</a>
+            <a href="https://drive.google.com/file/d/1Klc5VERq2VqXA96aXJmrSmJmas15QENY/view?usp=sharing"
+                target="_blank">CV</a>
+        </div>
     </div>
 
     <div class="main-section">
-        <div class="main-text">
+        <!-- Deutsch -->
+        <div class="main-text" data-lang="de" style="display: none;" data-display="block">
             <p>
                 <b>Hi, ich bin Peter,</b><br>
                 Student aus <b>Nürnberg/Bayern</b><br><br>
                 Willkommen auf meinem Portfolio :)
-
             </p>
         </div>
+        <!-- Englisch -->
+        <div class="main-text" data-lang="en" data-display="block">
+            <p>
+                <b>Hi, I'm Peter,</b><br>
+                studying in <b>Nuremberg/Bavaria</b><br><br>
+                Welcome to my Portfolio :)
+            </p>
+        </div>
+
         <div class="sidebar">
             <img src="/img/placeholder.jpg" class="place-holder">
             <p>see photoarchive [soon...]</p>
@@ -38,10 +61,12 @@
 
     <div class="work-box">
         <div class="work-photo">
-            <a href="mediaengineering.html"><img src="/img/logoplaceholder.png"></a>
+            <a href="inarbeit.html"><img src="/img/logoplaceholder.png"></a>
         </div>
-        <a href="mediaengineering.html"></a>
-        <div class="work-text"><a href="mediaengineering.html">
+        <a href="inarbeit.html"></a>
+        <!-- Deutsch -->
+        <div class="work-text" data-lang="de" style="display: none;" data-display="block"><a
+                href="inarbeit.html">
                 <h4>2023-2028</h4>
                 <h3>Media Engineering (B. Eng.)</h3>
                 <p>
@@ -51,16 +76,32 @@
                     <b>Kernkompetenzen: Programmieren, Mathe, Webgrundlagen und Design</b>
                 </p>
             </a>
-            <a href="stadia.html">Mehr Infos</a><a href="mediaengineering.html"></a>
+            <a href="inarbeit.html">Mehr Infos</a><a href="inarbeit.html"></a>
+        </div>
+
+        <!-- Englisch -->
+        <div class="work-text" data-lang="en" data-display="block"><a href="inarbeit.html">
+                <h4>2023-2028</h4>
+                <h3>Media Engineering (B. Eng.)</h3>
+                <p>
+                    Technical fields of new media are introduced, and corresponding areas of computer science and
+                    software development are taught. Additionally, engineering topics such as audio/video technology, as
+                    well as design fundamentals, are a significant part. <br>
+                    <b>Core competencies: programming, math, web basics, and design</b>
+                </p>
+            </a>
+            <a href="inarbeit.html">Learn more</a><a href="inarbeit.html"></a>
         </div>
     </div>
 
     <div class="work-box">
         <div class="work-photo">
-            <a href="mediaengineering.html"><img src="/img/logoplaceholder.png"></a>
+            <a href="inarbeit.html"><img src="/img/logoplaceholder.png"></a>
         </div>
-        <a href="mediaengineering.html"></a>
-        <div class="work-text"><a href="mediaengineering.html">
+        <a href="inarbeit.html"></a>
+        <!-- Deutsch-->
+        <div class="work-text" data-lang="de" style="display: none;" data-display="block"><a
+                href="inarbeit.html">
                 <h4>2022-2023</h4>
                 <h3>Expect Leads
                 </h3>
@@ -70,16 +111,30 @@
                     <b>Haupttatigkeit: Videoschnitt und Design</b>
                 </p>
             </a>
-            <a href="stadia.html">Mehr Infos</a><a href="mediaengineering.html"></a>
+            <a href="inarbeit.html">Mehr Infos</a><a href="inarbeit.html"></a>
+        </div>
+
+        <!-- Englisch-->
+        <div class="work-text" data-lang="en" data-display="block"><a href="inarbeit.html">
+                <h4>2022-2023</h4>
+                <h3>Expect Leads
+                </h3>
+                <p>
+                    In a young startup, I was taught team skills and the use of internal team software.<br>
+                    <b>Main activities: video editing and design</b>
+                </p>
+            </a>
+            <a href="inarbeit.html">Learn more</a><a href="inarbeit.html"></a>
         </div>
     </div>
 
     <div class="work-box">
         <div class="work-photo">
-            <a href="mediaengineering.html"><img src="/img/logoplaceholder.png"></a>
+            <a href="inarbeit.html"><img src="/img/logoplaceholder.png"></a>
         </div>
-        <a href="mediaengineering.html"></a>
-        <div class="work-text"><a href="mediaengineering.html">
+        <a href="inarbeit.html"></a>
+        <!-- Deutsch-->
+        <div class="work-text" data-lang="de" style="display: none;" data-display="block"><a href="inarbeit.html">
                 <h4>2024-jetzt</h4>
                 <h3>Home Server
                 </h3>
@@ -88,10 +143,35 @@
                     <b>Key-Learnings: Linux (Ubuntu Server), CasaOS</b>
                 </p>
             </a>
-            <a href="stadia.html">Mehr Infos</a><a href="mediaengineering.html"></a>
+            <a href="inarbeit.html">Mehr Infos</a><a href="inarbeit.html"></a>
+        </div>
+        <!-- Englisch-->
+        <div class="work-text" data-lang="en" data-display="block"><a href="inarbeit.html">
+                <h4>2024-today</h4>
+                <h3>Home Server
+                </h3>
+                <p>
+                    Here, I gained valuable practical experience with servers and Linux in general.<br>
+                    <b>Key learnings: Linux (Ubuntu Server), CasaOS</b>
+                </p>
+            </a>
+            <a href="inarbeit.html">Learn more</a><a href="inarbeit.html"></a>
         </div>
     </div>
 
+    <div class="footer"></div>
+
+    <script>
+        function switchLanguage() {
+            const currentLang = document.documentElement.lang;
+            const newLang = currentLang === 'en' ? 'de' : 'en';
+            document.documentElement.lang = newLang;
+
+            document.querySelectorAll('[data-lang]').forEach(element => {
+                element.style.display = element.getAttribute('data-lang') === newLang ? element.getAttribute('data-display') : 'none';
+            });
+        }
+    </script>
 </body>
 
 </html>
