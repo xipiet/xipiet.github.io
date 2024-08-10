@@ -5,77 +5,258 @@ html {
     padding: 0;
     scroll-behavior: smooth;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px 10%;
 }
+
 .logo {
     height: 60px;
-    /* Passen Sie die Höhe nach Bedarf an */
 }
+
 .nav-links {
     display: flex;
     gap: 40px;
 }
+
 .nav-links a {
     text-decoration: none;
     color: black;
 }
+
+.contents {
+    padding: 40px 10%;
+    align-items: center;
+    padding-bottom: 10%;
+}
+
 .main-section {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    /* ensures the alignment starts at the top */
-    padding: 60px 10%;
-    padding-bottom: 100px;
+    align-items: center;
+    padding-bottom: 80px;
 }
+
 .main-text {
     flex: 1;
     margin-right: 20px;
-    font-size: 250%;
+    font-size: 2.5vw
 }
+
 .sidebar {
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
 }
+
 .place-holder {
     max-width: 60%;
     height: auto;
 }
+
 .work-box {
     display: flex;
     align-items: center;
     transition: all .35s;
-    padding: 50px;
 }
+
+.work-text {
+    padding: 4%;
+}
+
 .work-text p {
-    width: 80%;
-    padding-bottom: 20px;
     color: #000;
-    font-weight: 400;
+    font-size: 1vw;
 }
+
 .work-box h3 {
     color: #000;
+    font-size: 1.5vw;
 }
+
 .work-box h4 {
     color: #00e;
+    font-size: 1vw;
 }
-.work-text {
-    padding-left: 120px;
+
+.work-text a {
+    text-decoration: none;
+    font-size: 1vw;
 }
+
 .work-photo img {
-    width: 200px;
-    border-radius: 30px;
-    padding-left: 120px;
+    width: 10vw;
+    padding: 4%;
 }
+
 .work-box:hover {
     transform: scale(1.02);
     transition: all .5s;
 }
-.work-text a {
+
+.footer-section {
+    display: flex;
+    background-color: black;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-links a {
+    color: white;
     text-decoration: none;
+}
+
+.footer-rechts {
+    color: white;
+    text-align: end;
+}
+
+.back-top a {
+    color: white;
+    text-decoration: none;
+}
+
+.mobilenavbar,
+.mobile-menu {
+    display: none;
+}
+
+.ty {
+    display: none;
+}
+
+/* Mobile-Optimierung */
+@media (max-width: 768px) {
+    .contents {
+        padding: 0;
+    }
+
+    .ty {
+        display: block;
+        text-align: center;
+        color: white;
+    }
+
+    .back-top {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .mobilenavbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .burger-menu {
+        font-size: 2rem;
+        cursor: pointer;
+        display: block;
+    }
+
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #cccc;
+        align-items: center;
+    }
+
+    .mobile-menu a {
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+
+    .mobile-menu button {
+        margin: 15px;
+    }
+
+    .mobile-menu.open {
+        display: flex;
+    }
+
+    .main-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .work-section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main-text {
+        width: 80%;
+        font-size: xx-large;
+        margin: 0;
+        margin-bottom: 40%;
+    }
+
+    .sidebar {
+        align-items: center;
+        margin-bottom: 40%;
+    }
+
+    .work-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 28vw;
+        max-width: 80%;
+    }
+
+    .work-photo img {
+        width: 60%;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .work-text {
+        padding: 0;
+    }
+
+    .work-box h3 {
+        font-size: 4vw;
+    }
+
+    .work-box h4 {
+        font-size: 3.5vw;
+    }
+
+    .work-text p {
+        font-size: 3.5vw;
+    }
+
+    .work-text .highlighted-text {
+        display: block;
+        margin-top: 2vw;
+    }
+
+    .work-text a {
+        font-size: 3.5vw;
+    }
+
+    .work-text .learn-more {
+        display: none;
+    }
 }
