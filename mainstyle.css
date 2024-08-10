@@ -98,7 +98,8 @@ html {
     transition: all .5s;
 }
 
-.footer-section {
+.footer-section-de,
+.footer-section-en {
     display: flex;
     background-color: black;
     padding: 20px;
@@ -124,16 +125,14 @@ html {
     text-align: end;
 }
 
+
 .back-top a {
     color: white;
     text-decoration: none;
 }
 
 .mobilenavbar,
-.mobile-menu {
-    display: none;
-}
-
+.mobile-menu,
 .ty {
     display: none;
 }
@@ -144,14 +143,33 @@ html {
         padding: 0;
     }
 
+    .work-photo{
+        justify-content: baseline;
+    }
+
     .ty {
         display: block;
         text-align: center;
         color: white;
+        font-size:small;
     }
 
     .back-top {
         display: none;
+    }
+
+    .footer-section-de,
+    .footer-section-en {
+        padding: 4%;
+    }
+
+    .footer-rechts {
+        max-width: 40%;
+        font-size: small;
+    }
+
+    .footer-links{
+        font-size: small;
     }
 
     .navbar {
@@ -254,6 +272,7 @@ html {
 
     .work-text a {
         font-size: 3.5vw;
+        
     }
 
     .work-text .learn-more {
